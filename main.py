@@ -27,3 +27,18 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 
+choice_one = input("Do you go Left or Right? (L/R) ").lower()
+
+if choice_one != "l":
+  print('Game Over!')
+else:
+  choice_two = input("Do you swim or wait? (S / W) ").lower()
+
+  if choice_two != "w":
+    print('Game Over')
+  else:
+    choice_three = input("Red, Yellow or Blue Door? (R / Y / B) ").lower()
+    if choice_three == "y":
+      print("You Win!")
+    else:
+      print("Game Over!")
